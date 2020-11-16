@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <audio id="sound1">
+        <source src="sound1.mp3"></source>
+    </audio>
+    <audio id="sound2">
+        <source src="sound2.mp3"></source>
+    </audio>
+    <audio id="sound3">
+        <source src="sound3.mp3"></source>
+    </audio>
+    <audio id="sound4">
+        <source src="sound4.mp3"></source>
+    </audio>
+    <audio id="sound5">
+        <source src="sound5.mp3"></source>
+    </audio>
+    <audio id="win">
+        <source src="win.mp3"></source>
+    </audio>
+    <audio id="error">
+        <source src="error.mp3"></source>
+    </audio>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1 id="text1">SCORE 10 TO WIN</h1>
+<div id="round">
+    <p>ROUND:</p>
+</div>
+<div class="flex-container">
+   <div></div>
+   <div style="font-size: 15px;">TURN ON<input type="checkbox" class="toggle" id="on"></div>
+   <div id="turn"></div>
+   <div style="font-size: 15px;">ONE LIFE<input type="checkbox" class="toggle" id="strict"></div>
+   <div></div>
+</div>
+<div class="flex-container1">
+   <div></div>
+   <div></div>
+   <div><button class="button" id="start">Start</button></div>
+   <div></div>
+   <div></div>
+</div>
+<div class="flex-container">
+  <div><img id="violetBulb" src="off_bulb.png" alt="violetBulb"></div>
+  <div><img id="blueBulb" src="off_bulb.png" alt="blueBulb"></div>
+  <div><img id="greenBulb" src="off_bulb.png" alt="greenBulb"></div>  
+  <div><img id="orangeBulb" src="off_bulb.png" alt="orangeBulb"></div>
+  <div><img id="redBulb" src="off_bulb.png" alt="redBulb"></div>
+</div>
+
+<script  src="javascript.js"></script> 
+
+</body>
+</html>
