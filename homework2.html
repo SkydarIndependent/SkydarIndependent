@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+  position: relative;
+  left: -7.8px;
+  top: -7.8px;
+  width: 98.7vw;
+}
+
+.flex-container > div {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  line-height: 75px;
+  font-size: 1.65vw;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  height: 5.3vw;
+}
+div.faculty {
+    font-weight: bold;
+    font-size: calc(3px + 1vw);
+    padding: 1vw;
+    padding-bottom: unset;
+    padding-right: unset;
+    height: 4.3vw;
+    border-bottom: 5px solid rgb(99, 143, 42);
+    border-left: 5px solid rgb(99, 143, 42);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+div.faculty:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -10px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #333333 40%, #ffffff 100%);
+}
+div.image-1 {
+  border-bottom: 5px solid white;
+  position: relative;
+}
+div.image-1:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: -5px;
+  bottom: -9.5px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #333333 40%, #ffffff 100%);
+}
+div.head {
+  padding: 1.7vw;
+  padding-bottom: unset;
+  padding-right: unset;
+  height: 3.6vw;
+  border-bottom: 5px solid rgb(99, 143, 42);
+  position: relative;
+}
+div.head:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -10px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #333333 40%, #ffffff 100%);
+}
+div.language {
+  font-size: 1vw;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.4vw;
+  border-bottom: 5px solid rgb(99, 143, 42);
+  position: relative;
+}
+div.language:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -9.9px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #333333 40%, #ffffff 100%);
+}
+#rus {
+  position: relative;
+  top: 0.7vw;
+  color: rgb(221, 221, 221);
+}
+#eng {
+  position: relative;
+  top: 0.6vw;
+  color: rgb(99, 143, 42);
+}
+div.image-2 {
+  border-bottom: 5px solid rgb(99, 143, 42);
+  position: relative;
+}
+div.image-2:before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -9.9px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #333333 40%, #ffffff 100%);
+}
+
+.table {
+  box-sizing: border-box;
+  width: 55%;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 100px;
+}
+
+header {
+  text-align: left;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: calc(15px + 1.2vw);
+  font-weight: 500;
+}
+
+#email {
+  font-size: calc(7px + 0.5vw);
+  font-style: italic;
+  color: rgb(99, 143, 42);
+  font-weight: 500;
+}
+
+.chernykh {
+  float: left;
+  width: 50%;
+  height: 590px; 
+  box-sizing: border-box;
+  border: 3px solid black;
+  line-height: 1px;
+}
+
+#image-3 {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  height: 590px; 
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: calc(8px + 0.7vw);
+  border: 3px solid black;
+  border-left: none;
+}
+
+.text:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-1 {
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+  border: 3px solid black;
+  font-size: calc(8px + 0.7vw);
+  font-weight: 500;
+}
+
+.footer-2 {
+  padding: 10px;
+  text-align: center;
+  border: 3px solid black;
+  border-top: none;
+  font-size: calc(10px + 0.9vw);
+  font-style: italic;
+  color: rgb(99, 143, 42);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .text, .chernykh {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: auto ;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="image-1" ><img src="spbgu_label.png" alt="image" height="100%"></div>
+  <div class="faculty" style="flex-grow: 10"> ФАКУЛЬТЕТ СВОБОДНЫХ <br> ИСКУССТВ И НАУК</div>
+  <div class="head" style="flex-grow: 8">ОБУЧЕНИЕ</div>
+  <div class="head" style="flex-grow: 8">ФАКУЛЬТЕТ</div>
+  <div class="head" style="flex-grow: 8">СТРУКТУРА</div>
+  <div class="head" style="flex-grow: 8">КАЛЕНДАРЬ</div>
+  <div class="language" style="flex-grow: 4">
+  <p id="eng">ENG</p>
+  <p id="rus">РУС</p>
+  </div>
+  <div class="image-2"><img src="green_button.png" alt="image" height="101%"></div>
+</div>
+
+<div class= "table">
+  <header>
+    <h2>ГЕРМАН АНАТОЛЬЕВИЧ ЧЕРНЫХ</h2>
+    <p id="email">g.chernykh@spbu.ru</p>
+  </header>
+  <section>
+    <article class="chernykh">
+      <img id="image-3" src="chernykh.jpg" alt="Best Teacher"> 
+    </article>
+    
+    <article class="text">
+      <p>Доцент кафедры проблем конвергенции естественных и гуманитарных наук, кандидат физико-математических наук</p>
+    </article>
+  </section>
+  
+  <footer class="footer-1">
+    <p style="color: white;">white text</p>
+    <p>Родился в 1967 году. В 1986 году окончил Ленинградский техникум авиационного приборостроения и автоматики по специальности «Авиационные приборы и автоматы». 
+      С 1986 по 1988 год служил в Советской Армии (Мурманск, артиллерийская разведка). В 1996 году окончил физический факультет СПбГУ по специальности «Физика» 
+      (кафедра физики высоких энергий и элементарных частиц). В 2002 году получил диплом о профессиональной переподготовке в СПбГУ по программе «Теория сложных систем».<br>
+    <p></p>
+      В 2004 году защитил кандидатскую диссертацию по специальности «Математическое моделирование, численные методы и комплексы программ». Тема диссертации: 
+      «Устойчивые и хаотические режимы в дискретных динамических системах». Работал программистом и доцентом на кафедре физики высоких энергий и элементарных частиц 
+      физического факультета СПбГУ. Научный сотрудник отдела распознавания речи научно-исследовательского департамента Центра речевых технологий.
+    </p>
+  </footer>  
+  <footer class="footer-2">
+    <p>ПРОЕКТЫ И ПУБЛИКАЦИИ НА PURE</p>
+  </footer>
+</div>
+<hr style = "height:2px; background-color: black; margin-bottom: 50px;">
+</body>
+</html>
+
